@@ -9,7 +9,7 @@ except ImportError:
 class EncryptionObfuscator:
     """Encrypt data at the network layer using AES (simulated IPsec)."""
     def __init__(self, key: bytes = None):
-        # Default 16-byte key (for demo purposes; in practice use a secure key)
+        # Default 16-byte key, assuming secure way to distribute key to all VMs
         if key is None:
             key = b'\x01' * 16
         if len(key) not in (16, 24, 32):

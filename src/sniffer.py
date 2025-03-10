@@ -89,7 +89,7 @@ def main():
         json.dump(stats, f, indent=2)
     print(f"Capture complete. Results saved to {args.output}")
 
-    # Visualization (if requested and matplotlib is available)
+    # Visualization
     if args.plot and plt:
         if stats.get("latency_samples"):
             plt.figure()
