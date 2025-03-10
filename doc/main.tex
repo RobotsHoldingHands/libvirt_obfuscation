@@ -33,6 +33,12 @@ Libvirt is an open-source API, daemon, and management toolkit that abstracts the
 
 In typical setups, libvirt creates a default virtual network (e.g., a Linux bridge like \texttt{virbr0}) that handles IP address management via DHCP (often using \texttt{dnsmasq}) and NAT for outbound traffic. This environment sets the stage for implementing additional traffic obfuscation strategies.
 
+\begin{figure}[h]
+\caption{Libvirt high-level structure.}
+\centering
+\includegraphics[width=0.9\textwidth]{libvirt.png}
+\end{figure}
+
 \section{Traffic Obfuscation Strategies in Libvirt-Based Networks}
 In the context of libvirt-managed environments, two potential points for traffic obfuscation are identified:
 \begin{enumerate}[label=\arabic*.]
