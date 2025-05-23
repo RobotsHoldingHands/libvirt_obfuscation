@@ -3,7 +3,7 @@ enum nx_action_subtype {
     /* ... other actions ... */
     NXAST_CUSTOM_ENCRYPT,      /* Custom Encryption */
     NXAST_CUSTOM_RANDOM_DELAY, /* Custom Random Delay */
-    NXAST_CUSTOM_POLICE,       /* Custom Policing (for Constant Bitrate) */
+    NXAST_CUSTOM_POLICY,       /* Custom Policing (for Constant Bitrate) */
     NXAST_CUSTOM_TRAFFIC_PAD,  /* Custom Traffic Padding */
     /* ... */
 };
